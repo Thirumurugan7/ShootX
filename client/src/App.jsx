@@ -14,6 +14,7 @@ import SaleMap from "./pages/SaleMap";
 import Settings from "./pages/Settings";
 import GFHomePage from "./components/GFHomePage";
 import BeachGame from "./Beachgame";
+import MainHome from "./MainHome";
 
 
 
@@ -38,6 +39,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
             <Route path="/virtualgirlfriend" element={<GFHomePage />} />
             <Route path="/beachball" element={<BeachGame />} />
+            <Route path="/mainHome" element={<MainHome />} />
           </Routes>
       </Router>
     </>

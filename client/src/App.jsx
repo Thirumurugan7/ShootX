@@ -23,7 +23,9 @@ function App() {
   return (
     <>
       <Router>
+      
           <Routes>
+         
             <Route path="/" element={<Home />} />
             <Route path="/build" element={<Build />} />
             <Route path="/bot" element={<Bot />} />
@@ -41,7 +43,9 @@ function App() {
             <Route path="/beachball" element={<BeachGame />} />
             <Route path="/mainHome" element={<MainHome />} />
           </Routes>
+          
       </Router>
+
     </>
   );
 }

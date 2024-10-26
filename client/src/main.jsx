@@ -8,12 +8,16 @@ import Loading from "./interface/Loading";
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  
     <ChatProvider>
     <Suspense fallback={<Loading />}>
+    
       <App />
       </Suspense>
     </ChatProvider>
+    
   </React.StrictMode>,
 )

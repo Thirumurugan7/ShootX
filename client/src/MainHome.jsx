@@ -16,6 +16,7 @@ function MainHome() {
 
   return (
     <>
+    
      <Nav/>
      <Hero/>
      <Features/>
@@ -25,6 +26,7 @@ function MainHome() {
      <SofiaAi/>
      <Community/>
      <Footer/>
+    
     </>
   )
 }

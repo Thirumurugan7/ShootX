@@ -16,6 +16,16 @@ import GFHomePage from "./components/GFHomePage";
 import BeachGame from "./Beachgame";
 import MainHome from "./MainHome";
 
+import SlideApp from "./components/SlideApp";
+import Result from "./components/Result.jsx";
+import "./index.css";
+import Lobby from "./components/Lobby copy.jsx";
+import Options from "./components/Options";
+import StoreOptions from "./components/StoreOption";
+import Homes from "./components/Home.jsx";
+import GunSelectionScreen from "./components/NewStore/GunSelectionScreen.jsx";
+import CharacterSelectionScreen from "./components/NewStore/CharacterSelectionScreen.jsx";
+import StarkShoot from "./StarkShoot.jsx";
 
 
 function App() {
@@ -42,6 +52,33 @@ function App() {
             <Route path="/virtualgirlfriend" element={<GFHomePage />} />
             <Route path="/beachball" element={<BeachGame />} />
             <Route path="/mainHome" element={<MainHome />} />
+            <Route path="/starkshoot" exact element={<Homes />} />
+                    <Route path="/lobby" exact element={<Lobby />} />
+                    <Route path="/game" exact element={<StarkShoot />} />
+                    <Route path="/result" exact element={<Result />} />
+                    <Route
+                      path="/Character"
+                      exact
+                      element={<SlideApp data={"1"} />}
+                    />
+                    <Route
+                      path="/guns"
+                      exact
+                      element={<GunSelectionScreen />}
+                    />
+                    <Route
+                      path="/characters"
+                      exact
+                      element={<CharacterSelectionScreen />}
+                    />
+                    <Route
+                      path="/Car"
+                      exact
+                      element={<SlideApp data={"3"} />}
+                    />
+                    <Route path="/options" exact element={<Options />} />
+                    <Route path="/optstore" exact element={<StoreOptions />} />
+    
           </Routes>
           
       </Router>
